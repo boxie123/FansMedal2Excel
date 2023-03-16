@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "FansMedal2Excel"
+version = "0.1.0"
+description = "粉丝勋章输出到Excel"
+authors = ["铂屑 <80164656+boxie123@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.10.6"
+loguru = "^0.6.0"
+httpx = "^0.23.3"
+pandas = "^1.5.3"
+xlsxwriter = "^3.0.9"
+qrcode = "^7.4.2"
+pillow = "^9.4.0"
+pyinstaller = "^5.9.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.8.0", allow-prereleases = true}
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+default = true
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
